@@ -16,7 +16,7 @@ func RandString(bs []byte, length int) string {
 	if length < 1 {
 		length = 6
 	}
-	result := make([]byte, length, length)
+	result := []byte{}
 	var tmp byte
 	for i := 0; i < length; i++ {
 		tmp = bs[rand.Intn(bytesLength)]
